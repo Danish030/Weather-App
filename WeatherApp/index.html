@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <meta name="description" content="Weather app made by Danish using OpenWeather API">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/90c22ae0e7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Weather App</h1>
+            <button id="get-location">Get Location</button>
+            <p id="latitude"></p>
+            <p id="longitude"></p>
+            <h2 id="city" class="city">Delhi</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="current-card">
+                <h1 id="temp"><span id="temp-value"></span></h1>
+                <h2><i class="fa-solid fa-droplet"></i><span id="humidity"></span></h2>
+                <p><span id="weather-value"></span></p>
+                <h3 id="date"></h3>
+                <div id="weather-result"></div>
+            </div>
+            <div class="current-card">
+                <h1 id="temp"><span id="temp-value1"></span></h1>
+                <h2><i class="fa-solid fa-droplet"></i><span id="humidity1"></span></h2>
+                <p><span id="weather-value1"></span></p>
+                <h3 id="date1"></h3>
+                <div id="weather-result"></div>
+            </div>
+            <div class="current-card">
+                <h1 id="temp"><span id="temp-value2"></span></h1>
+                <h2><i class="fa-solid fa-droplet"></i><span id="humidity2"></span></h2>
+                <p><span id="weather-value2"></span></p>
+                <h3 id="date2"></h3>
+                <div id="weather-result"></div>
+            </div>
+            <div class="current-card">
+                <h1 id="temp"><span id="temp-value3"></span></h1>
+                <h2><i class="fa-solid fa-droplet"></i><span id="humidity3"></span></h2>
+                <p><span id="weather-value3"></span></p>
+                <h3 id="date3"></h3>
+                <div id="weather-result"></div>
+            </div>
+            <div class="current-card">
+                <h1 id="temp"><span id="temp-value4"></span></h1>
+                <h2><i class="fa-solid fa-droplet"></i><span id="humidity4"></span></h2>
+                <p><span id="weather-value4"></span></p>
+                <h3 id="date4"></h3>
+                <div id="weather-result"></div>
+            </div>
+        </div>
+        <div class="days-container">
+            <p class="days-title">Next five days</p>
+            <div class="day">
+                <div class="time">
+                    <p id="day&date">Monday</p>
+                    <p><span id="day-cloud"></span></p>
+                </div>
+                <div class="day-weather">
+                    <p class="temp">Temp: <span id="day-temp"></span></p>
+                    <p class="humidity">Humidity: <span id="day-humidity"></span></p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="time">
+                    <p id="day&date1">Monday</p>
+                    <p><span id="day-cloud1"></span></p>
+                </div>
+                <div class="day-weather">
+                    <p class="temp">Temp: <span id="day-temp1"></span></p>
+                    <p class="humidity">Humidity: <span id="day-humidity1"></span></p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="time">
+                    <p id="day&date2">Monday</p>
+                    <p><span id="day-cloud2"></span></p>
+                </div>
+                <div class="day-weather">
+                    <p class="temp">Temp: <span id="day-temp2"></span></p>
+                    <p class="humidity">Humidity: <span id="day-humidity2"></span></p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="time">
+                    <p id="day&date3">Monday</p>
+                    <p><span id="day-cloud3"></span></p>
+                </div>
+                <div class="day-weather">
+                    <p class="temp">Temp: <span id="day-temp3"></span></p>
+                    <p class="humidity">Humidity: <span id="day-humidity3"></span></p>
+                </div>
+            </div>
+            <div class="day">
+                <div class="time">
+                    <p id="day&date4">Monday</p>
+                    <p><span id="day-cloud4"></span></p>
+                </div>
+                <div class="day-weather">
+                    <p class="temp">Temp: <span id="day-temp4"></span></p>
+                    <p class="humidity">Humidity: <span id="day-humidity4"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
